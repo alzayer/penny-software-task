@@ -1,0 +1,138 @@
+.signup-fullpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+}
+
+p{
+  display: inline;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+a{
+  color: royalblue;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 130px;
+  height: auto;
+}
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  main {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  button {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #8624FF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #430392;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+  }
+
+  .circles-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .circle-1 {
+    background-color: #EB4548;
+    transform: translateX(70px) translateY(-40px);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .circle-2 {
+    background-color: #9760F6;
+    transform: translateX(-40px) translateY(-200px);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .circle-3 {
+    background-color: #F5CB4E;
+    transform: translateX(90px) translateY(-200px);
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+  }
+  
+  .circle-4 {
+    background-color: #6ED886;
+    transform: translateX(-110px) translateY(-435px);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }

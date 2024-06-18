@@ -1,0 +1,46 @@
+<div class="signup-fullpage">
+  <header>
+    <img src="/Penny-Logo.svg" alt="Penny Logo" class="logo">
+    <h2>Sign Up</h2>
+  </header>
+
+  <div class="circles-container">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+    <div class="circle circle-4"></div>
+  </div>
+
+  <main>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" class="form-control" [(ngModel)]="username" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" class="form-control" [(ngModel)]="email" required (keydown.enter)="onSubmit()" autoFocus>
+    </div>
+
+    <div>
+      <label for="password">Password</label>
+      <input type="password" id="password" class="form-control" [(ngModel)]="password" required (keydown.enter)="onSubmit()">
+    </div>
+
+    <div>
+      <p>Already have an account? <a href="http://localhost:4200/signin">Sign in</a></p>
+    </div>
+
+    <div class="text-center">
+      <button type="button" class="btn btn-primary" (click)="onSubmit()">Sign Up</button>
+    </div>
+
+    <div class="text-danger text-center mt-2" *ngIf="signupError">
+      {{ signupError }}
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Penny Software. All rights reserved.</p>
+  </footer>
+</div>
