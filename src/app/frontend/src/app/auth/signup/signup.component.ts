@@ -32,9 +32,7 @@ export class SignupComponent {
       .subscribe({
         next: response => {
           // console.log('Token:', response.token);
-          this.authService.setToken(response.token);
-          this.signupError = null;
-          this.router.navigateByUrl('/home');
+          this.router.navigateByUrl('/signin');
         },
         error: error => {
           console.error('Login error:', error);
